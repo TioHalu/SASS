@@ -1,0 +1,118 @@
+$hitam:#2E4C6D;
+$kuning:#FFE300;
+$merah:#F90716;
+$ligth:#FF87CA;
+$putih:#fff;
+$hijau:#116530;
+$font-stack: Roboto,
+sans-serif;
+$font-des:arial;
+$sizefont: 20px;
+.navbar {
+    background-color: $hitam;
+    font-family: $font-stack;
+    a {
+        //sass nesting
+        padding: 10px;
+        text-decoration: none;
+        font-family: $font-stack;
+        color: $putih;
+    }
+    img {
+        //sass nesting
+        width: 50px;
+        height: 50px;
+    }
+    a:hover {
+        //sass nesting
+        background-color: $ligth;
+        color: $hitam;
+    }
+    .rigth {
+        //sass nesting
+        float: right;
+        width: auto;
+    }
+}
+
+body {
+    font-size: $sizefont;
+    font-family: $font-stack;
+}
+
+.card-title {
+    background-color: $merah;
+}
+
+.card-body {
+    background-color: $kuning;
+}
+
+.header {
+    background-image: url('https://source.unsplash.com/1200x400?');
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    h1 {
+        font-family: $font-stack;
+        font-size: 30px;
+        text-align: center;
+        color: $putih;
+    }
+    p {
+        font-family: $font-des;
+        font-size: $sizefont;
+        color: $hitam;
+        text-align: center;
+    }
+}
+
+%button-extands {
+    //parent inheritance
+    border: none;
+    background-color: $hijau;
+    padding: 15px 15px;
+    font-size: $sizefont;
+    cursor: pointer;
+    color: $putih;
+    font-family: $font-des;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.join {
+    @extend %button-extands; //extand atau inheritance
+}
+
+.lihat {
+    @extend %button-extands; //extand atau inheritance
+}
+
+//mixin
+.grid-container {
+    display: grid;
+    text-align: center;
+}
+
+@mixin system-grid($start,
+$end,
+$center) {
+    grid-column-start: $start;
+    grid-column-end: $end;
+    justify-content: $center;
+}
+
+.item-pertama {
+    @include system-grid(1,
+    6,
+    center); //pemanggilan mixin
+}
+
+.item-kedua {
+    @include system-grid(6,
+    12,
+    center); //pemanggilan mixin
+}

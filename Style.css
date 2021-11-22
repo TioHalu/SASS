@@ -1,0 +1,104 @@
+.navbar {
+    background-color: #2E4C6D;
+    font-family: Roboto, sans-serif;
+}
+
+.navbar a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar a:hover {
+    background-color: #FF87CA;
+    color: #2E4C6D;
+}
+
+.navbar .rigth {
+    float: right;
+    width: auto;
+}
+
+body {
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.card-title {
+    background-color: #F90716;
+}
+
+.card-body {
+    background-color: #FFE300;
+}
+
+.header {
+    background-image: url("https://source.unsplash.com/1200x400?");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.header p {
+    font-family: arial;
+    font-size: 20px;
+    color: #2E4C6D;
+    text-align: center;
+}
+
+.lihat,
+.join {
+    border: none;
+    background-color: #116530;
+    padding: 15px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-family: arial;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    text-align: center;
+}
+
+.grid-container h1 {
+    text-align: center;
+}
+
+.item-pertama {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    justify-content: center;
+}
+
+.item-kedua {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+}
+
+
+/*# sourceMappingURL=Style.css.map */
