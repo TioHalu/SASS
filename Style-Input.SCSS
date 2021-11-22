@@ -92,6 +92,17 @@ body {
 }
 
 //mixin
+.about {
+    margin-top: 20px;
+    background-color: $ligth;
+    img {
+        border-radius: 100%;
+        height: 400px;
+        width: 400px;
+    }
+    ;
+}
+
 .grid-container {
     display: grid;
     text-align: center;
@@ -115,4 +126,11 @@ $center) {
     @include system-grid(6,
     12,
     center); //pemanggilan mixin
+    margin-top: 30px;
+    h1 {
+        color: $hitam;
+    }
+    h2 {
+        color: $hijau;
+    }
 }
